@@ -14,7 +14,7 @@ assignees: ''
 ## 📚 Reference or links
 -
 
-## ✅ Lista de Verificación (Checklist)
+## ✅ Checklist
 - [ ] Investigation and information recollection
 - [ ] Create or Modify a file
 - [ ] Creation of diagrams
