@@ -1,26 +1,22 @@
 ---
-name: Tarea de Documentación
-about: Crea o actualiza secciones de la documentación del proyecto.
-title: "[DOC] "
+name: Documentation task
+about: Create or modify documentation section.
+title: "[DOC] :"
 labels: documentation, enhancement
 assignees: ''
 ---
 
-## 📝 Descripción de la Tarea
-## 📂 Archivos o Secciones Afectadas
-- [ ] 
-- [ ] 
+## 📝 Task Description
 
-## 🎯 Público Objetivo
-## 📚 Fuentes de Información y Referencias
-- Issue relacionado: #
-- Link de referencia: 
+## 📂 File to modify
+- 
+
+## 📚 Reference or links
+-
 
 ## ✅ Lista de Verificación (Checklist)
-- [ ] Investigación y recopilación de datos.
-- [ ] Redacción del borrador inicial.
-- [ ] Revisión ortográfica y de estilo.
-- [ ] Verificación de enlaces y formatos (Markdown).
-- [ ] Revisión por parte de un par (Peer Review).
+- [ ] Investigation and information recollection
+- [ ] Create or Modify a file
+- [ ] Creation of diagrams
 
-## 📌 Notas Adicionales
+## 📌 Additional notes
