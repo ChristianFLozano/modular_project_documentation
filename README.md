@@ -13,6 +13,8 @@ Requirement specification document
 
 [Use Case Diagram](https://lucid.app/lucidchart/02368ea8-910c-4010-888d-e97c29fdd83d/edit?page=0_0&invitationId=inv_240a06a3-a8d8-4d62-a538-96affdf015ff#) - A brief overview of how users will interact with the app **ask for authorization**
 
+[Database EDR](https://dbdiagram.io/d/Proyecto-Modular-69dc019f0f7c9ef2c0dacafc) - Entity Relationship Diagram
+
 ## Important links
 
 [Markdown Basic Syntax](https://www.markdownguide.org/basic-syntax/) - Best practices for markdown format
