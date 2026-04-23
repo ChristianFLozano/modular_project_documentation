@@ -15,6 +15,7 @@ Requirement specification document
 
 [Database EDR](https://dbdiagram.io/d/Proyecto-Modular-69dc019f0f7c9ef2c0dacafc) - Entity Relationship Diagram
 
+[Activity diagram](https://lucid.app/lucidchart/9b235a27-fd11-43af-b4ad-9297f87cf67b/edit?viewport_loc=308%2C-290%2C3198%2C1590%2C0_0&invitationId=inv_4011781a-d61e-40c1-b9d6-5d5c387b038b). Activity Diagram 
 ## Important links
 
 [Markdown Basic Syntax](https://www.markdownguide.org/basic-syntax/) - Best practices for markdown format
