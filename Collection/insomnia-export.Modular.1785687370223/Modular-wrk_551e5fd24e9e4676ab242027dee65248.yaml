@@ -1,0 +1,513 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Modular
+meta:
+  id: wrk_551e5fd24e9e4676ab242027dee65248
+  created: 1782662367144
+  modified: 1782662367144
+  description: ""
+collection:
+  - url: http://localhost:8080/api/books
+    name: Get Books
+    meta:
+      id: req_faf50a64ec8b48e19d18a883c4dc2d5d
+      created: 1782662374337
+      modified: 1785687163067
+      isPrivate: false
+      description: ""
+      sortKey: -1782662374337
+    method: GET
+    authentication:
+      type: bearer
+      disabled: false
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3ODU2ODYyMDIsImV4cCI6MTc4NTc3MjYwMn0.td6aZfQG4DeAnGBP9HLzEtPWrCumYvxn-1q7vw3IWc7jxaNfktlJhs-anVfY2ZrCUOOhv2nExs0HBQ2Zfc41fA
+      prefix: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/users/1/books
+    name: Get User Books
+    meta:
+      id: req_e828326e05464bf0ab7a3f60c9161d84
+      created: 1782664669989
+      modified: 1784600060238
+      isPrivate: false
+      description: ""
+      sortKey: -1782664669989
+    method: GET
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3ODQ1OTQyOTcsImV4cCI6MTc4NDY4MDY5N30.7hk8gfpcCNx0kX7LXczWmo00XfoMMjuSg6TYGocUB4PGTM-SL88E4-F1UtSa27zXkFc2w6o2nQmOCRg8WyTETA
+      prefix: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/profile/books
+    name: Get My Books
+    meta:
+      id: req_1b4fe844c14b4dbdb5b5bb7d41e0993d
+      created: 1782665007937
+      modified: 1785687177167
+      isPrivate: false
+      description: ""
+      sortKey: -1782665007937
+    method: GET
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3ODU2ODYyMDIsImV4cCI6MTc4NTc3MjYwMn0.td6aZfQG4DeAnGBP9HLzEtPWrCumYvxn-1q7vw3IWc7jxaNfktlJhs-anVfY2ZrCUOOhv2nExs0HBQ2Zfc41fA
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/addBook
+    name: Post book
+    meta:
+      id: req_c10916264a6c48149fd44541a20c12b6
+      created: 1782665193089
+      modified: 1784684941989
+      isPrivate: false
+      description: ""
+      sortKey: -1782665193089
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "title": "test",
+          "author": "test",
+          "isbn": "918-5434343",
+          "description": "Fake description",
+          "coverImageLink": "/FakePath",
+          "language": "Español",
+          "genreId": 1,
+          "available": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3ODQ1OTQyOTcsImV4cCI6MTc4NDY4MDY5N30.7hk8gfpcCNx0kX7LXczWmo00XfoMMjuSg6TYGocUB4PGTM-SL88E4-F1UtSa27zXkFc2w6o2nQmOCRg8WyTETA
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/books/8
+    name: Patch book
+    meta:
+      id: req_ecfe72334f5a443f8404d449c9f8f518
+      created: 1782669920855
+      modified: 1785085143988
+      isPrivate: false
+      description: ""
+      sortKey: -1782669920855
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "title": "Test",
+          "author": "Test",
+          "isbn": "978-3434343",
+          "description": "Prueba de edit desde Insomnia",
+          "coverImageLink": "/testPatch",
+          "language": "Español",
+          "userId": 1,
+          "available": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3ODUwODI4NjYsImV4cCI6MTc4NTE2OTI2Nn0.7PXdcTXYG4MFxbfxv1VXaQxXqHjVGzYl8UnUTbxcjWIF-ORFGcF7i7z1bl7Z3--Q3ve8ZRGNYCNi2FZlVh9SvQ
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/books/2/status
+    name: Patch book status
+    meta:
+      id: req_16918354a6fd41ac865f8a090210740b
+      created: 1782691404238
+      modified: 1784687098922
+      isPrivate: false
+      description: ""
+      sortKey: -1782691404238
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"isAvailable": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3ODQ2ODI2NTcsImV4cCI6MTc4NDc2OTA1N30.UZMg1IZraHAY77aOYEwVO-OYCwioUAa-QwgqKqbmSUk-Sw6TAQxagshh7ydFXEmQQl9Q2rKnZmx06mv0VeEdbA
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/books/7/delete
+    name: Delete book
+    meta:
+      id: req_352bf3f88b8d467db03fbdfbdb7aeb27
+      created: 1782694435404
+      modified: 1784687680466
+      isPrivate: false
+      description: ""
+      sortKey: -1782694435404
+    method: DELETE
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3ODQ2ODI2NTcsImV4cCI6MTc4NDc2OTA1N30.UZMg1IZraHAY77aOYEwVO-OYCwioUAa-QwgqKqbmSUk-Sw6TAQxagshh7ydFXEmQQl9Q2rKnZmx06mv0VeEdbA
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/test1
+    name: Test
+    meta:
+      id: req_5acaeaded7fa42dc859ed0a9d5912a07
+      created: 1783124749197
+      modified: 1784001721262
+      isPrivate: false
+      description: ""
+      sortKey: -1783124749197
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/auth/register
+    name: Post Register User
+    meta:
+      id: req_23a71a98591c4e809a1fc1b90ade79fd
+      created: 1783127623007
+      modified: 1785082579610
+      isPrivate: false
+      description: ""
+      sortKey: -1783127623007
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "email": "test@gmail.com",
+          "password": "test123",
+          "firstName": "test",
+          "lastName": "test",
+          "username": "test"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/auth/login
+    name: Post Login user
+    meta:
+      id: req_097bf03698e94f849fbe84acff00e9b2
+      created: 1783129521095
+      modified: 1785534328223
+      isPrivate: false
+      description: ""
+      sortKey: -1783129521095
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "email": "test@gmail.com",
+          "password": "test1234"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/books/2
+    name: GET Book
+    meta:
+      id: req_7980b49c5b7045c58b4609a4f83521e5
+      created: 1783180490552
+      modified: 1785686277511
+      isPrivate: false
+      description: ""
+      sortKey: -1782662374237
+    method: GET
+    authentication:
+      type: bearer
+      disabled: false
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3ODU2ODYyMDIsImV4cCI6MTc4NTc3MjYwMn0.td6aZfQG4DeAnGBP9HLzEtPWrCumYvxn-1q7vw3IWc7jxaNfktlJhs-anVfY2ZrCUOOhv2nExs0HBQ2Zfc41fA
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/user
+    name: Patch User
+    meta:
+      id: req_82619253fda04aeba4f3b32e3066a9db
+      created: 1785081729698
+      modified: 1785530797302
+      isPrivate: false
+      description: ""
+      sortKey: -1785081729698
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"bio": "This is a test",
+        	"firstName": "Test First Name",
+        	"lastName": "Test Last Name",
+        	"username": "Test12",
+        	"profilePicture": "/testImage"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3ODUwODI4NjYsImV4cCI6MTc4NTE2OTI2Nn0.7PXdcTXYG4MFxbfxv1VXaQxXqHjVGzYl8UnUTbxcjWIF-ORFGcF7i7z1bl7Z3--Q3ve8ZRGNYCNi2FZlVh9SvQ
+      prefix: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/users/myUser
+    name: Get My User
+    meta:
+      id: req_1359e0ded2b749d097b5b97f67dca646
+      created: 1785086943339
+      modified: 1785095778844
+      isPrivate: false
+      description: ""
+      sortKey: -1785086943339
+    method: GET
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3ODUwODI4NjYsImV4cCI6MTc4NTE2OTI2Nn0.7PXdcTXYG4MFxbfxv1VXaQxXqHjVGzYl8UnUTbxcjWIF-ORFGcF7i7z1bl7Z3--Q3ve8ZRGNYCNi2FZlVh9SvQ
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/users
+    name: Get users
+    meta:
+      id: req_7005366d6baf4fae8bbfa2581b577aeb
+      created: 1785091034241
+      modified: 1785686218818
+      isPrivate: false
+      description: ""
+      sortKey: -1785091034241
+    method: GET
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3ODU2ODYyMDIsImV4cCI6MTc4NTc3MjYwMn0.td6aZfQG4DeAnGBP9HLzEtPWrCumYvxn-1q7vw3IWc7jxaNfktlJhs-anVfY2ZrCUOOhv2nExs0HBQ2Zfc41fA
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/user/1
+    name: Get User
+    meta:
+      id: req_aa679b9bbafb4c0c88655445e037cadf
+      created: 1785095848835
+      modified: 1785095948240
+      isPrivate: false
+      description: ""
+      sortKey: -1785095848835
+    method: GET
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3ODUwODI4NjYsImV4cCI6MTc4NTE2OTI2Nn0.7PXdcTXYG4MFxbfxv1VXaQxXqHjVGzYl8UnUTbxcjWIF-ORFGcF7i7z1bl7Z3--Q3ve8ZRGNYCNi2FZlVh9SvQ
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/myUser/password
+    name: Path user password
+    meta:
+      id: req_86b6476d53484c25bc971bce039f9390
+      created: 1785098041321
+      modified: 1785098148969
+      isPrivate: false
+      description: ""
+      sortKey: -1784105625396.5
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"password": "test1234"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3ODUwODI4NjYsImV4cCI6MTc4NTE2OTI2Nn0.7PXdcTXYG4MFxbfxv1VXaQxXqHjVGzYl8UnUTbxcjWIF-ORFGcF7i7z1bl7Z3--Q3ve8ZRGNYCNi2FZlVh9SvQ
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/myUser/deactivate
+    name: Patch deactivate my user
+    meta:
+      id: req_5273652d99604ef3918083fa1142c1f6
+      created: 1785530786691
+      modified: 1785534124584
+      isPrivate: false
+      description: ""
+      sortKey: -1785530786691
+    method: PATCH
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3ODU1MjkxNTcsImV4cCI6MTc4NTYxNTU1N30.YQ_1O7IT5IvTAovUEQwmk_prpqLDe_pXgQ9Kuo7CMHw3SlYvtXChysbKQ6UJtlGQdxMep7Kedi63AXbNPrjSfw
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/users/12/activate
+    name: Patch activate user
+    meta:
+      id: req_c4f375762c3f4a138990d685add03f62
+      created: 1785531025813
+      modified: 1785534293420
+      isPrivate: false
+      description: ""
+      sortKey: -1785531025813
+    method: PATCH
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJtYXJtb2xlZ29tYXJpbGFAZ21haWwuY29tIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNzg1NTM0MTI4LCJleHAiOjE3ODU2MjA1Mjh9.u1gTH8xM_yH023uKG4DNrwVmcaAYXVOQQ_DNxBaUX9Y_OfE4MTAGG-1XBAgw3Q9SPLSmGEAK_O-TM6KC4S1Djg
+      prefix: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/users/12/deactivate
+    name: Patch deactivate user
+    meta:
+      id: req_dc9caef8e2644a0f9ff5f18386fc5873
+      created: 1785534228519
+      modified: 1785534339968
+      isPrivate: false
+      description: ""
+      sortKey: -1785534228519
+    method: PATCH
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3ODU1MzQzMjksImV4cCI6MTc4NTYyMDcyOX0.stVtzU4NFLfY0he_XmgVFKzn0SU-6FmNUIBSA2G5bvDKwlYRobScqhbFgmbfteqN7MKhfsnWGLTQ2PwVP_kqfQ
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_6ea3284e55671e73df7264adbb64b05974d5a69e
+    created: 1782662367181
+    modified: 1782662394406
+  cookies:
+    - id: aaac267b-76cc-4664-add8-89d7ba1ed7e3
+      key: JSESSIONID
+      value: 600D3B7916DA7A40EDB78742F45BBF42
+      domain: localhost
+      path: /
+      secure: false
+      httpOnly: true
+      hostOnly: true
+environments:
+  name: Base Environment
+  meta:
+    id: env_6ea3284e55671e73df7264adbb64b05974d5a69e
+    created: 1782662367180
+    modified: 1782662367180
+    isPrivate: false
