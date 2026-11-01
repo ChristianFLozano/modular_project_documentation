@@ -54,7 +54,15 @@ Add credentials and click on submit button then you will be in home page
 
 ![Login screenshot scene 1](Images/screenshots/Login1.png)
 
+### Google
 
+Click on google icon in login page
+
+![Login google screenshot scene 1](Images/screenshots/LoginGoogle1.png)
+
+Then select the account and you will be in home page
+
+![Login google screenshot scene 2](Images/screenshots/RegisterGoogle3.png)
 
 </details>
 
