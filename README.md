@@ -129,6 +129,49 @@ If you want to report it opens a report modal ready to fill it up
 
 </details>
 
+<details>
+    <summary>Books</summary>
+
+TO-DO
+
+- Add book
+- Edit book
+- Delete book
+
+
+</details>
+
+<details>
+    <summary> Request book </summary>
+
+TO-DO
+
+- Request book
+- Accept cancel book
+
+
+</details>
+
+<details>
+    <summary> Chat </summary>
+
+TO-DO
+
+- Chat interface
+
+
+</details>
+
+<details>
+    <summary> Other </summary>
+
+This helps to log out and change theme color
+
+![Other](Images/screenshots/Other.png)
+
+
+</details>
+
 ###  Note
 
 In this repo we're adding documentation about Projecto modular and things we think are important to keep easy access
