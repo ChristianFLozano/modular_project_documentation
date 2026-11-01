@@ -8,7 +8,11 @@ Bookmatch born as an idea to share books and bring security between users...
 <details>
     <summary>Login and Register</summary>
 
-User can register his account with his real gmail, after adding the credentials he will receive a mail with the auth code generated
+## Register
+
+ > User can register his account with his real gmail, after adding the credentials manually or using google.
+
+### Manually
 
 ![Register screenshot scene 1](Images/screenshots/Register1.png)
 
@@ -20,7 +24,11 @@ A modal will pop up and introduce the code received via mail to verify the mail 
 
 ![Register screenshot scene 3](Images/screenshots/Register3.png)
 
-User can also register his account with google authentication. To register an account using google move to Register pages
+You will be redirected to login page with a success message
+
+![Register screenshot scene 4](Images/screenshots/Register4.png)
+
+### Google
 
 ![Register google screenshot scene 1](Images/screenshots/Register1.png)
 
@@ -35,6 +43,16 @@ Select the account you want to register and let google do it
 Once is done
 
 ![Register google screenshot scene 4](Images/screenshots/RegisterGoogle4.png)
+
+## Login
+
+> User can sing up his account with his real gmail, once has added the credentials manually or using google.
+
+### Manually
+
+Add credentials and click on submit button then you will be in home page
+
+![Login screenshot scene 1](Images/screenshots/Login1.png)
 
 
 
