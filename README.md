@@ -8,7 +8,6 @@ Bookmatch born as an idea to share books and bring security between users...
 <details>
     <summary>Login and Register</summary>
     User can register his account with his real gmail, after adding the credentials he will receive a mail with the auth code generated
-    <video src="Videos/Register.mp4" controls width="100%"></video>
 
 
 </details>
