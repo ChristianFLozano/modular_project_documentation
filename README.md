@@ -7,7 +7,10 @@ Bookmatch born as an idea to share books and bring security between users...
 
 <details>
     <summary>Login and Register</summary>
-    User can register his account with his real gmail, after adding the credentials he will receive a mail with the auth code generated
+
+User can register his account with his real gmail, after adding the credentials he will receive a mail with the auth code generated
+
+![Captura de pantalla del registro](Images/screenshots/Register1.png)
 
 
 </details>
