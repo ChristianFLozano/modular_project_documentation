@@ -80,11 +80,54 @@ Actions on this page:
 
 ![Home page screenshot scene 1](Images/screenshots/Homepage.png)
 
-
-
 </details>
 
+<details>
+    <summary>Profiles</summary>
 
+## My profile
+
+In my profile page you can see your own information, books you have added and buttons to add books or edit user information
+
+![My profile page screenshot scene 1](Images/screenshots/MyProfile1.png)
+
+### Edit profile
+
+Once you click edit button it will show a new modal to edit your information
+
+Actions:
+
+- Add basic information,
+- Add or update profile pic
+- Add or delete book genres user likes
+
+![Edit profile modal screenshot scene 1](Images/screenshots/EditProfile1.png)
+
+If you want to add a new profile pic, to keep consistency between dimentions we have a function that rezise the image
+
+![Edit profile modal screenshot scene 2](Images/screenshots/EditProfile2.png)
+
+Once everything has been updated click the submit button and it will close the modal.
+
+![Edit profile modal screenshot scene 3](Images/screenshots/EditProfile3.png)
+
+![Edit profile modal screenshot scene 4](Images/screenshots/EditProfile4.png)
+
+## Other profiles
+
+A way to visit other users page is clicking on the name in book card
+
+![Other profile page scene 1](Images/screenshots/OtherProfile1.png)
+
+When you visit a user page you can see his information, books he has posted and request for them, and report the user
+
+![Other profile page scene 2](Images/screenshots/OtherProfile2.png)
+
+If you want to report it opens a report modal ready to fill it up
+
+![Other profile page scene 3](Images/screenshots/OtherProfile3.png)
+
+</details>
 
 ###  Note
 
