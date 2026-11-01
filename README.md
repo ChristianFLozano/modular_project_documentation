@@ -66,6 +66,25 @@ Then select the account and you will be in home page
 
 </details>
 
+<details>
+    <summary>Homepage</summary>
+
+As you can see in the home page there are book cards with essential information. Some important information is displayed.
+
+Actions on this page:
+
+- Liking books: This helps to train the k-means algorithm, once it is trained you can visualize recommendations in For You tab.
+- View comments: This display a modal to see comments left on the book and post new comments
+- Request a book to book's owner: This triggers a request that owner has to accept or deny.
+- Move other books: There is a pagination that avoid get too much books from backend and keep the query fast
+
+![Home page screenshot scene 1](Images/screenshots/Homepage.png)
+
+
+
+</details>
+
+
 
 ###  Note
 
