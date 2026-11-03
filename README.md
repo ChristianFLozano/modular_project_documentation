@@ -165,17 +165,27 @@ To delete a book you need to click on delete icon in book table in your profile
 
 ![Delete book scene 1](Images/screenshots/DeleteBook.png)
 
-
-
 </details>
 
 <details>
     <summary> Request book </summary>
 
-TO-DO
+To request a book you make sure the book status is available then you can click on request book
 
-- Request book
-- Accept cancel book
+![Request book scene 1](Images/screenshots/RequestBook1.png)
+
+
+Once someone asks you for a book you will notice it due to a notification will appear
+
+![Request book scene 2](Images/screenshots/RequestBook2.png)
+
+Once you are in request page you can see your books that others want to have, you can accept them or deny them
+
+![Request book scene 3](Images/screenshots/RequestBook3.png)
+
+And the request you have sent
+
+![Request book scene 4](Images/screenshots/RequestBook4.png)
 
 
 </details>
