@@ -132,11 +132,39 @@ If you want to report it opens a report modal ready to fill it up
 <details>
     <summary>Books</summary>
 
-TO-DO
+## Add book
 
-- Add book
-- Edit book
-- Delete book
+To add a book you have go to your profile page and click on add button
+
+
+![Add book scene 1](Images/screenshots/AddBook1.png)
+
+Once you've pressed the button, a add book modal will be showed.
+
+Title, author, ISBN, description, genre, language and cover image are required
+
+![Add book scene 2](Images/screenshots/AddBook2.png)
+
+If you filled up the information successfuly the book will be ready to shown in your profile pic and home page for other users
+
+![Add book scene 3](Images/screenshots/AddBook3.png)
+
+## Edit book
+
+To edit a book you need to click on edit icon in book table in your profile
+
+![Edit book scene 1](Images/screenshots/EditBooks1.png)
+
+Once you have clicked on the edit icon, it will show edit book modal, edit any field you want
+
+![Edit book scene 2](Images/screenshots/AddBook2.png)
+
+## Delete book
+
+To delete a book you need to click on delete icon in book table in your profile
+
+![Delete book scene 1](Images/screenshots/DeleteBook.png)
+
 
 
 </details>
