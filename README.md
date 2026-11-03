@@ -193,9 +193,10 @@ And the request you have sent
 <details>
     <summary> Chat </summary>
 
-TO-DO
+the only one way to have a chat is accepting or others accept the book request
 
-- Chat interface
+![Chat scene 1](Images/screenshots/Chat.png)
+
 
 
 </details>
